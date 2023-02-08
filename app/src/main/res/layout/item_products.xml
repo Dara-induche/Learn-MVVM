@@ -12,7 +12,7 @@
         android:id="@+id/layout_card"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_height="160dp">
                 <ImageView
                     android:layout_width="match_parent"
-                    android:scaleType="centerCrop"
+                    android:scaleType="center"
                     android:id="@+id/img_product"
                     android:src="@drawable/grey_thumb"
                     android:layout_height="match_parent"
