@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                     if (dy>0){
                         val lastItem = (recyclerView.layoutManager as LinearLayoutManager).findLastCompletelyVisibleItemPosition()
                         if (lastItem== viewModel.getProductList.value.size-1){
-                            productAdapter.notifyDataSetChanged()
                             viewModel.callNextPage()
                         }
                     }
