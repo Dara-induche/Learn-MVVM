@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UIScreen.MainScreen.MainActivity">
 
 
     <RelativeLayout
@@ -12,11 +12,22 @@
         android:id="@+id/layout_body"
         android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_products"
+            tools:itemCount="3"
+            android:id="@+id/rv_product"/>
+
+
     </RelativeLayout>
 
 
     <include
         android:id="@+id/layout_loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         layout="@layout/layout_loading"/>
 
 </RelativeLayout>

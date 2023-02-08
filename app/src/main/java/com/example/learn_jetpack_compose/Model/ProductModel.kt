@@ -5,6 +5,8 @@ class ProductModel {
     var total :Int?  =null
     var skip  :Int?  =null
     var limit :Int?  = null
+    var isLoading:Boolean = false
+    var isLoadingNext:Boolean =false
 
 
     class ProductInformation:java.io.Serializable{
